@@ -1,0 +1,42 @@
+{
+  "name": "my-frontend-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "alertifyjs": "^1.14.0",
+    "aos": "^2.3.4",
+    "axios": "^1.9.0",
+    "bootstrap": "^5.3.6",
+    "chart.js": "^4.2.1",
+    "chartjs-adapter-date-fns": "^3.0.0",
+    "chartjs-chart-financial": "^0.2.1",
+    "framer-motion": "^12.23.0",
+    "gsap": "^3.13.0",
+    "html-react-parser": "^5.2.6",
+    "jalaali-js": "^1.2.8",
+    "lightweight-charts": "^5.0.7",
+    "next": "15.3.2",
+    "react": "^19.0.0",
+    "react-bits": "^1.0.5",
+    "react-chartjs-2": "^5.3.0",
+    "react-dom": "^19.0.0",
+    "react-loading-skeleton": "^3.5.0",
+    "react-modal": "^3.16.3"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4.1.17",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.2",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.17"
+  }
+}

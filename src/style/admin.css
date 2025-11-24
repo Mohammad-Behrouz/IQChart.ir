@@ -1,0 +1,151 @@
+.admin-panel-nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 55px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px gray;
+    padding-top: 12%;
+    transition: all 0.5s ease-out;
+    overflow: hidden;
+    background-color: #fff;
+    align-items: center;
+}
+
+* {
+    font-family: "IranSans";
+}
+
+.admin-panel-nav i {
+    font-size: 24px;
+}
+
+.open-nav {
+    width: 200px;
+}
+
+.admin-panel-nav a span {
+    opacity: 0;
+    transition: background-color 0.3s ease-out;
+    position: absolute;
+    right: 19%;
+    font-family: "iranSans";
+}
+
+.open-nav a span {
+    opacity: 1;
+
+}
+
+.layoutListLi {
+    width: 100%;
+    transition: all 0.2s linear;
+    padding: 15px 10px 15px 0;
+    border-radius: 10px;
+    color: #000f51;
+
+}
+
+.layoutListLi:hover {
+    background-color: #000f51;
+    color: white;
+}
+
+.admin-panel-nav ul {
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    right: 13px;
+}
+
+
+.hamburger {
+    /* position: relative; */
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: fixed;
+    right: 16px;
+    top: 13%;
+
+}
+
+.hamburger span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #000f51;
+    border-radius: 2px;
+    transition: all 0.5s ease;
+
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    top: 9px;
+}
+
+.hamburger span:nth-child(3) {
+    top: 18px;
+}
+
+/* وقتی کلاس open رو داره، خط 1 و 3 ضربدر می‌شن، خط 2 محو می‌شه */
+.hamburger.open span:nth-child(1) {
+    top: 9px;
+    transform: rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    top: 9px;
+    transform: rotate(-45deg);
+}
+
+.layoutListLi a {
+    display: flex;
+    direction: rtl;
+}
+
+#header-of-admin-users {
+    width: 93%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-direction: row-reverse;
+}
+
+.box-admin {
+    width: 300px;
+    border-radius: 10px;
+    height: 130px;
+}
+
+#number-of-users {
+    background: linear-gradient(45deg, #185618, #00ff81);
+}
+
+#add-user-box {
+    background: linear-gradient(45deg, #000f51, #6c09e5);
+}
+
+#users-block-list {
+    background: linear-gradient(45deg, #680606, #ff0000);
+}

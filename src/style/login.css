@@ -1,0 +1,83 @@
+#login-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login-div{
+    width:800px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+
+}
+#login-SubDiv{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "iranSans";
+    align-items: center;
+    gap: 7px;
+    color: #000f51;
+}
+#signUp-SubDiv{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0 , #000f51,rgb(3, 37, 255));
+}
+#signUp-SubDiv img{
+    width: 50%;
+}
+#login-SubDiv div{
+    width: 70%;
+    height: 50px;
+    display: flex;
+    background-color: #bed1f3a9;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+#login-SubDiv input{
+    background-color: transparent;
+    color: #000f51;
+    direction: rtl;
+    border: none;
+    outline: none;
+    font-family: "IranSans";
+}
+
+#login-SubDiv input::placeholder{
+    color: #000f51;
+}
+#login-SubDiv p{
+    text-align: right;
+}
+#login-SubDiv h3{
+    font-size: large;
+}
+#login-SubDiv form{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+#login-SubDiv span{
+    color: red;
+    font-size: 10px;
+    width: 65%;
+    text-align:right;
+    height: 10px;
+}

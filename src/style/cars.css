@@ -1,0 +1,108 @@
+
+.container-of-cars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-of-cars-div {
+    width: 80%;
+}
+
+.most-view-cars-header {
+    display: flex;
+    direction: rtl;
+    justify-content: space-between;
+    margin: 30px 0 10px 0;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.most-view-cars-header h3 {
+    font-weight: bold;
+    font-family: "IranYekanBold"
+}
+
+.search_cars {
+    background-color: #260599;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.search_cars input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 300px;
+    margin-right: 10px;
+    color: white;
+}
+
+.car-show {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 15px;
+}
+
+.search_cars input::placeholder {
+    color: aliceblue;
+}
+
+.car-div {
+    background-color: #fff;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 122px;
+    padding: 29px 15px 17px;
+    display: flex;
+    box-shadow: 0 0 10px gray;
+}
+
+.car-div b {
+    font-size: 24px;
+
+}
+
+.car-div span {
+    font-family: "IranSans" !important;
+}
+
+
+.car-div h3 {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.price-and-name-car {
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+    align-items: ceter;
+}
+
+.price-show-car {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.change_percent {
+    font-family: "IranSans";
+}
+
+.reverse {
+    transform: scaleY(-1);
+}
+
+.car-description {
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+    font-family: "IranYekanRegular" !important;
+}

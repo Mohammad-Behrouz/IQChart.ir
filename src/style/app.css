@@ -1,0 +1,149 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+th,
+td {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@font-face {
+  font-family: 'IranSans';
+  src: url('/Fonts/IRANSANSDNWEB.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IranSansXFA';
+  src: url('/Fonts/IRANSANSXFANUM-MEDIUM.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'IranYekanThin';
+  src: url('/Fonts/IRANYekanThin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IranYekanLight';
+  src: url('/Fonts/IRANYekanLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IranYekanRegular';
+  src: url('/Fonts/IRANYekanRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IranYekanMedium';
+  src: url('/Fonts/IRANYekanMedium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IranYekanBold';
+  src: url('/Fonts/IRANYekanBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IranYekanExtraBold';
+  src: url('/Fonts/IRANYekanExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IranYekanBlack';
+  src: url('/Fonts/IRANYekanBlack.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IranYekanExtraBlack';
+  src: url('/Fonts/IRANYekanExtraBlack.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "IranYekanMedium";
+}
+
+/* .iran-sans-font{
+  font-family: "IranSans" !important;
+} */
+.iran-sans-xfa {
+  font-family: "IranSansXFA";
+}
+
+.iran-yekan-bold {
+  font-family: "IranYekanBold";
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.common-input {
+  /* width: 350px; */
+  height: 20px;
+  border-radius: 10px;
+  background-color: #bed1f3a9;
+  color: #000f51;
+  direction: rtl;
+  display: flex;
+  align-items: center;
+}
+
+.common-input input,
+.common-input textarea {
+  background-color: transparent;
+  direction: rtl;
+  border: none;
+  outline: none;
+  width: 80%;
+}
+
+.common-input input::placeholder,
+.common-input textarea::placeholder {
+  color: #000f51;
+  font-family: "IranSansXFA" !important;
+}
+
+.common-input i {
+  font-size: 20px;
+  margin: 0 10px;
+  color: #000f51;
+  align-self: center;
+}
