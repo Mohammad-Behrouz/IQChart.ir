@@ -89,7 +89,7 @@ ul {
   padding: 16px;
   color: white;
   font-size: 14px;
-  font-family: "IranSans";
+  font-family: "IranYekan";
 
 }
 
@@ -162,7 +162,7 @@ ul {
   background-color: #fff;
   border-radius: 16px;
   direction: rtl;
-  font-family: 'Vazir', sans-serif;
+  font-family: "IranYekan";
   display: flex;
   gap: 52px;
   width: 85%;
@@ -199,7 +199,7 @@ ul {
   text-align: right;
   border-bottom: 1px solid #eee;
   font-size: 15px;
-  font-family: "IranSans" !important;
+  font-family: "IranYekan" !important;
   direction: ltr;
 
 }
@@ -234,7 +234,7 @@ ul {
   border-bottom: 1px solid #eee;
   font-size: 15px;
   direction: ltr;
-  font-family: "IranSans" !important;
+  font-family: "IranYekan" !important;
 }
 
 .gold-table img {
@@ -339,7 +339,7 @@ a {
   border: none;
   padding: 7px 20px;
   color: white;
-  font-family: "IranSans";
+  font-family: "IranYekan";
   border-radius: 5px;
   box-shadow: 0 0 5px #000f51;
   cursor: pointer;
@@ -358,7 +358,7 @@ a {
 
 #search-box input {
   background: none;
-  font-family: "IranSans";
+  font-family: "IranYekan";
   text-align: right;
   border: none;
   color: white;
@@ -384,7 +384,7 @@ a {
 
 #search-box input {
   background: none;
-  font-family: "IranSans";
+  font-family: "IranYekan";
   text-align: right;
   border: none;
   color: white;
@@ -787,7 +787,7 @@ a {
   border-radius: 10px;
   transition: all 0.3s ease;
   font-size: 16px;
-  font-family: "IranSans";
+  font-family: "IranYekan";
 }
 
 .mobile-menu-user a:hover {
@@ -824,7 +824,7 @@ a {
   color: white;
   padding: 15px 20px;
   font-size: 16px;
-  font-family: "IranSans";
+  font-family: "IranYekan";
   transition: all 0.3s ease;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -865,7 +865,7 @@ a {
   gap: 15px;
   color: white;
   font-size: 16px;
-  font-family: "IranSans";
+  font-family: "IranYekan";
 }
 
 .mobile-accordion-header i:first-child {
@@ -902,7 +902,7 @@ a {
   color: white;
   padding: 12px 20px 12px 50px;
   font-size: 15px;
-  font-family: "IranSans";
+  font-family: "IranYekan";
   transition: all 0.3s ease;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);

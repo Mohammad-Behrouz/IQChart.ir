@@ -1,7 +1,3 @@
-* {
-    font-family: "IranYekan";
-}
-
 body {
     overflow-x: hidden;
 }
@@ -98,6 +94,7 @@ table {
 
 .tala-ons-div {
     width: 100%;
+    direction: rtl;
     /* overflow-x: auto; */
     display: flex;
 
@@ -126,7 +123,8 @@ table {
 .ons-table td {
     text-align: center;
     font-size: 15px;
-    font-family: "IranSans" !important;
+    padding: 7px 15px;
+    font-family: "IranYekan" !important;
 }
 
 /* .ons-table th{
@@ -135,13 +133,14 @@ table {
 .seke-table {
     width: 99%;
     box-shadow: 0 0 5px gray;
+    table-layout: fixed;
 }
 
 .seke-table td,
 .seke-table th {
     text-align: center;
     font-size: 15px;
-    font-family: "IranSans" !important;
+    font-family: "IranYekan" !important;
 }
 
 
@@ -168,7 +167,7 @@ table {
 
 .crypto-table {
     box-shadow: 0 0 10px gray;
-    /* width: 90%; */
+    width: 90%;
     border-collapse: collapse;
 
 }
@@ -182,4 +181,81 @@ table {
 .chart_png {
     width: 100px !important;
     height: 100%;
+}
+
+@media (max-width: 599px) {
+    #blue-div {
+        width: 100%;
+        height: 350px;
+    }
+
+    .gold-container {
+        margin-top: 0;
+    }
+
+    .table-container {
+        width: 90%;
+    }
+
+    #gold-title {
+        margin: 0;
+        text-align: center;
+        width: 100vw;
+        position: inherit;
+
+        /* direction: rtl; */
+    }
+
+    .most-view-gold {
+        position: absolute;
+        display: grid;
+        place-items: center;
+        bottom: 0;
+        gap: 5px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .most-view-gold div {
+        width: 84%;
+        scale: 0.95;
+    }
+
+    .most-view-gold div h4 {
+        font-size: 14px;
+    }
+
+    .most-view-gold div b {
+        font-size: 14px;
+    }
+
+    .seke-table td,
+    .seke-table th {
+        padding: 5px 10px;
+    }
+
+    .table-container {
+        direction: rtl;
+    }
+
+    #seke-column {
+        padding: 10px 42px;
+    }
+
+    .tala-ons-div {
+        flex-direction: column;
+    }
+
+    .tala-ons-div table {
+        width: 100%;
+    }
+
+    .gold-container-div {
+        width: 90%;
+    }
+
+    .change_percent {
+        direction: ltr;
+        font-size: 12px;
+    }
+
 }

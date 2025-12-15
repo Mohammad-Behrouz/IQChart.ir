@@ -47,12 +47,13 @@
     margin: 15px;
     height: 290px;
     background-color: #fff;
-    box-shadow: 0 0 18px rgba(26, 5, 254, 0.628);
+    box-shadow: 0 0 18px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .saham-info-1st-row table tbody {
     display: flex;
@@ -73,7 +74,7 @@
 .saham-primary-info tr td:nth-child(2) {
     text-align: left;
     width: 120px;
-    font-family: "IranSans" !important;
+    font-family: "IranYekan" !important;
     font-weight: 300;
 }
 
@@ -81,7 +82,7 @@
     text-align: right;
     width: 250px;
     font-size: 18px;
-    font-family: "IranSans";
+    font-family: "IranYekan";
 
 }
 
@@ -94,7 +95,7 @@
 
 .sell-order td,
 .buy-order td {
-    font-family: "IranSans";
+    font-family: "IranYekan";
     font-size: 15px;
 
 }
@@ -102,6 +103,10 @@
 .order-table-container table {
     width: 45%;
     height: 90%;
+}
+
+.order-table-container table td{
+    font-size: 12px;
 }
 
 .order-table-container table tbody {
@@ -157,7 +162,7 @@
 
 #powe-show-div-bourse span {
     font-size: 12px;
-    font-family: "iranSans";
+    font-family: "IranYekan";
 }
 
 #power-show-div {
@@ -170,7 +175,7 @@
 }
 
 #power-show-div span {
-    font-family: "IranSans";
+    font-family: "IranYekan";
 }
 
 #power-show-div div {
@@ -200,12 +205,14 @@
 #bourse-chart-container {
     width: 41.5%;
     height: 300px;
-    box-shadow: 0 0 18px #1a05fea0;
+    box-shadow: 0 0 18px;
     margin: 15px;
     overflow: hidden;
     border-radius: 10px;
 
 }
+
+
 
 #codal-container-header {
     padding: 20px;
@@ -214,7 +221,7 @@
 
 #codal-container-header a {
     color: rgb(8, 8, 222);
-    font-family: "IranSans";
+    font-family: "IranYekan";
 }
 
 #codal-container-header h5 {
@@ -240,19 +247,19 @@
     background-color: #000f51;
     color: white;
     border-radius: 5px;
-    font-family: "IranSans";
+    font-family: "IranYekan";
     font-size: 14px;
 
 }
 
 .codal-Bourse-tr {
     width: 100%;
-    font-family: "IranSans";
+    font-family: "IranYekan";
 
 }
 
 .codal-Bourse-tr {
-    font-family: "IranSans";
+    font-family: "IranYekan";
 }
 
 #codal-table-body {
@@ -321,12 +328,19 @@
     /* margin-top: 15px; */
 
 }
-.bourse-container{
+
+.bourse-container {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 15px;
+}
+
+@media (max-width: 767px) {
+    .bourse-container {
+        display: none !important;
+    }
 }
 
 .first-row {
@@ -363,7 +377,7 @@
     background-color: #000f51;
     color: white;
     border-radius: 5px;
-    font-family: "IranSans";
+    font-family: "IranYekan";
     font-size: 14px;
 }
 
@@ -373,16 +387,16 @@
     direction: rtl;
     padding: 10px;
     margin: 10px 20px 5px 20px;
-    background-color: #260599;
+    background-color: #000f51;
     color: white;
     border-radius: 5px;
-    font-family: "IranSans";
+    font-family: "IranYekan";
     font-size: 15px;
 }
 
 .indexes-table {
     font-size: 13px;
-    font-family: "IranSans";
+    font-family: "IranYekan";
     margin: 0 30px 0 0;
 }
 
@@ -396,7 +410,7 @@
     direction: ltr;
     width: 40%;
     text-align: center;
-    font-family: "IranSans";
+    font-family: "IranYekan";
 }
 
 .bourse-index-value {
@@ -426,4 +440,34 @@
     direction: rtl;
     margin: 5px;
 
+}
+
+@media (max-width : 599px) {
+    .saham-info-1st-row {
+        flex-direction: column;
+    }
+
+    .bourse-containers {
+        width: 90%;
+        height: 260px;
+        margin: 7px;
+    }
+
+    #saham-info-2nd-row {
+        flex-direction: column-reverse;
+    }
+
+    #bourse-chart-container {
+        width: 90%;
+    }
+
+    #codal-container,
+    #bourse-chart-container {
+        width: 90%;
+
+    }
+
+    #codal-container{
+        height: 375px;
+    }
 }

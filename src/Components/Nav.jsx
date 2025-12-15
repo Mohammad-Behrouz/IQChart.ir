@@ -171,7 +171,7 @@ export const Nav = () => {
                     <img src="/svg/tala.svg" className='svg-icon' alt="" />
                     <span>طلا</span>
                   </Link>
-                  <Link href="/" className="mobile-accordion-item" onClick={closeMobileMenu}>
+                  <Link href="/Forex" className="mobile-accordion-item" onClick={closeMobileMenu}>
                     <img src="/svg/Forex.svg" className='svg-icon' alt="" />
                     <span>فارکس</span>
                   </Link>

@@ -15,7 +15,7 @@
 }
 
 * {
-    font-family: "IranSans";
+    font-family: "IranYekan";
 }
 
 .admin-panel-nav i {
@@ -31,7 +31,7 @@
     transition: background-color 0.3s ease-out;
     position: absolute;
     right: 19%;
-    font-family: "iranSans";
+    font-family: "IranYekan";
 }
 
 .open-nav a span {

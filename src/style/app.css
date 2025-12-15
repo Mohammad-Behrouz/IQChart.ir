@@ -81,7 +81,7 @@ td {
 }
 
 * {
-  font-family: "IranYekanMedium";
+  font-family: "IranYekan";
 }
 
 /* .iran-sans-font{
@@ -138,7 +138,7 @@ td {
 .common-input input::placeholder,
 .common-input textarea::placeholder {
   color: #000f51;
-  font-family: "IranSansXFA" !important;
+  font-family: "IranYekan" !important;
 }
 
 .common-input i {

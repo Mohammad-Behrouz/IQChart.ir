@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: "iranSans";
+    font-family: "IranYekan";
     align-items: center;
     gap: 7px;
     color: #000f51;
@@ -52,7 +52,7 @@
     direction: rtl;
     border: none;
     outline: none;
-    font-family: "IranSans";
+    font-family: "IranYekan";
 }
 
 #login-SubDiv input::placeholder{

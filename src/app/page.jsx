@@ -216,9 +216,9 @@ export default function Home() {
                 <tbody>
                   {cryptoPrices.map((coin) => (
                     <tr key={coin.id}>
-                      <td className="coinName iran-sans-font">{namesInFarsi(coin.name)}</td>
-                      <td className="iran-sans-font">${coin.current_price.toLocaleString()}</td>
-                      <td className="iran-sans-font"
+                      <td className="coinName">{namesInFarsi(coin.name)}</td>
+                      <td>${coin.current_price.toLocaleString()}</td>
+                      <td
                         style={{
                           color:
                             coin.price_change_percentage_24h >= 0
@@ -228,7 +228,7 @@ export default function Home() {
                       >
                         {coin.price_change_percentage_24h.toFixed(2)}%
                       </td>
-                      <td className="iran-sans-font hidden md:block">${coin.market_cap.toLocaleString()}</td>
+                      <td className="hidden md:block">${coin.market_cap.toLocaleString()}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -268,16 +268,16 @@ export default function Home() {
                     const high = parseFloat(coin.high) || 0;
                     return (
                       <tr key={coin.slug || coin.id}>
-                        <td className=" iran-sans-font">{goldNamesInFarsi(coin.slug)}</td>
-                        <td className="iran-sans-font">{price.toLocaleString()}</td>
-                        <td className="iran-sans-font"
+                        <td>{goldNamesInFarsi(coin.slug)}</td>
+                        <td>{price.toLocaleString()}</td>
+                        <td
                           style={{
                             color: changePercent >= 0 ? "green" : "red",
                           }}
                         >
                           {changePercent.toFixed(2)}%
                         </td>
-                        <td className="iran-sans-font hidden md:block"
+                        <td className="hidden md:block"
                           style={{
                             color: changeAmount >= 0 ? "green" : "red",
                           }}
@@ -295,7 +295,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="section-4">
+      <section id="section-4" >
         <h3 className="mb-3">ویژگی های آیکیو چارت</h3>
 
         <div id="section-4-spotlight-container" className=" flex flex-col gap-4 md:flex-row">
@@ -378,7 +378,7 @@ export default function Home() {
       </section>
 
 
-      <section className="animated-background-section w-full min-h-[100px] mt-99 py-20 iran-sans-font flex flex-col gap-5 items-center justify-center relative overflow-hidden" style={{ color: 'white', marginTop: "150px" }}>
+      <section className="animated-background-section w-full min-h-[100px] mt-99 py-20 flex flex-col gap-5 items-center justify-center relative overflow-hidden" style={{ color: 'white', marginTop: "150px" }}>
         <div className="animated-bg-gradient"></div>
         <div className="animated-shapes">
           <div className="shape shape-1"></div>
@@ -402,7 +402,7 @@ export default function Home() {
               data-aos-duration="800"
               data-aos-delay="0"
             >
-              <div className="text-5xl iran-sans-font font-bold mb-2" style={{ color: 'white' }}>10K+</div>
+              <div className="text-5xl font-bold mb-2" style={{ color: 'white' }}>10K+</div>
               <div className="text-lg" style={{ color: 'white' }}>کاربر فعال</div>
             </div>
             <div

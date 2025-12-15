@@ -120,7 +120,7 @@ const page = () => {
     return (
         <>
             <section id='blue-div' >
-                <h3 id='gold-title' className='iran-sans-font'>نگاهی به بازار ارز 💵</h3>
+                <h3 id='gold-title'>نگاهی به بازار ارز 💵</h3>
                 <div className='most-view-gold '>
                     {isLoading ?
                         (
@@ -160,7 +160,7 @@ const page = () => {
                                     <h4><img src={`/Images/coins/${gold.slug}.png`} alt={gold.slug} />  {gold.name}</h4>
                                     <div className='most-view-price'>
                                         <b>{parseInt(gold.price).toLocaleString("fa")}</b>
-                                        <span className="ltr change_percent iran-sans-font">
+                                        <span className="ltr change_percent">
                                             {parseInt(gold.change) > 0 ? (
                                                 <span style={{ color: "green" }}>
                                                     <i className="fa-solid fa-triangle "></i> +{parseFloat(gold.change_percent).toLocaleString("fa")}% {parseInt(gold.change).toLocaleString("fa")}

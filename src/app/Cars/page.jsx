@@ -73,7 +73,7 @@ const page = () => {
             <div className="container-of-cars">
                 <div className='container-of-cars-div'>
                     <div className="most-view-cars-header">
-                        <h4 className='iran-sans-font'>ماشین های پربازدید داخلی {!isLoading ? `(آخرین آپدیت ${cars[0].last_update})` : (<Skeleton width={200} height={20} />)}</h4>
+                        <h4>ماشین های پربازدید داخلی {!isLoading ? `(آخرین آپدیت ${cars[0].last_update})` : (<Skeleton width={200} height={20} />)}</h4>
                         <div className='search_cars'>
                             <i className="fa-solid fa-magnifying-glass"></i>
                             <input type="text" value={searchIranian} onChange={e => setSearchIranian(e.target.value)} placeholder='جستجوی ماشین ...' />
@@ -105,7 +105,7 @@ const page = () => {
                                         <div className="price-show-car">
                                             <b>{Number(car.price).toLocaleString("fa")}</b>
 
-                                            <span className="ltr change_percent iran-sans-font">
+                                            <span className="ltr change_percent">
                                                 {parseInt(car.change_percent) > 0 ? (
                                                     <span style={{ color: "green" }}>
                                                         <i className="fa-solid fa-triangle"></i> +{car.change_percent}%
@@ -138,7 +138,7 @@ const page = () => {
 
                     </div>
                     <div className="most-view-cars-header">
-                        <h4 className='iran-sans-font'>ماشین های پربازدید خارجی {!isLoading ? `(آخرین آپدیت ${cars[0].last_update})` : (<Skeleton width={200} height={20} />)}</h4>
+                        <h4>ماشین های پربازدید خارجی {!isLoading ? `(آخرین آپدیت ${cars[0].last_update})` : (<Skeleton width={200} height={20} />)}</h4>
                         {/* <div className='search_cars'>
                             <i className="fa-solid fa-magnifying-glass"></i>
                             <input type="text" calue placeholder='جستجوی ماشین ...' />

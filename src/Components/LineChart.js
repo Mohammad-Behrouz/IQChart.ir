@@ -25,7 +25,7 @@ const LineChart = ({ data }) => {
             layout: {
                 background: { type: 'solid', color: '#ffffff' },
                 textColor: '#000000',
-                fontFamily: 'IranSans',
+                fontFamily: 'IranYekan',
             },
             grid: {
                 vertLines: { visible: false },
@@ -60,7 +60,7 @@ const LineChart = ({ data }) => {
             font-size: 12px;
             pointer-events: none;
             direction: rtl;
-            font-family: IranSans;
+            font-family: IranYekan;
             z-index: 10;
         `;
         chartContainerRef.current.appendChild(tooltip);

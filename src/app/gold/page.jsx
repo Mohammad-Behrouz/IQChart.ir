@@ -108,7 +108,7 @@ const page = () => {
     return (
         <>
             <section id='blue-div' >
-                <h3 id='gold-title' className='iran-sans-font'>نگاهی به بازار طلا 🪙</h3>
+                <h3 id='gold-title'>نگاهی به بازار طلا 🪙</h3>
                 <div className='most-view-gold '>
                     {isLoading ?
                         (
@@ -148,13 +148,13 @@ const page = () => {
                                     <h4>{gold.name}</h4>
                                     <div className='most-view-price'>
                                         <b>{parseInt(gold.price).toLocaleString("fa")}</b>
-                                        <span className="ltr change_percent iran-sans-font">
+                                        <span className="ltr change_percent">
                                             {parseInt(gold.change) > 0 ? (
                                                 <span style={{ color: "green" }}>
                                                     <i className="fa-solid fa-triangle"></i> +{parseFloat(gold.change_percent).toLocaleString("fa")}% {parseInt(gold.change).toLocaleString("fa")}
                                                 </span>
                                             ) : parseInt(gold.change) < 0 ? (
-                                                <span style={{ color: "red" }} className='iran-sans-font'>
+                                                <span style={{ color: "red" }}>
                                                     <i
                                                         className="fa-solid fa-triangle"
                                                         style={{ transform: "rotate(180deg)" }}
@@ -187,7 +187,7 @@ const page = () => {
                     <table id='ons-table' className='seke-table'>
                         <thead>
                             <tr>
-                                <th >سکه</th>
+                                <th className="w-[150px]">سکه</th>
                                 <th>قیمت</th>
                                 <th >درصد</th>
                                 <th >تغییرات</th>
@@ -218,7 +218,7 @@ const page = () => {
                             }) : seke.map((o, index) => {
                                 return (
                                     <tr key={index}>
-                                        <td style={{ width: "100px" }}>{o.name}</td>
+                                        <td style={{ width: "150px" }}>{o.name}</td>
                                         <td>{parseInt(o.price).toLocaleString("fa")}</td>
                                         <td style={{ color: parseFloat(o.change_percent) > 0 ? "green" : parseFloat(o.change_percent) < 0 ? "red" : "gray", direction: "ltr" }}>{o.change_percent}%</td>
                                         <td style={{ color: parseFloat(o.change_percent) > 0 ? "green" : parseFloat(o.change_percent) < 0 ? "red" : "gray" }}>{parseInt(o.change).toLocaleString("fa")}</td>

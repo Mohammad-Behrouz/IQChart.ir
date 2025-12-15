@@ -230,7 +230,7 @@ const Forex = () => {
     return (
         <>
             <section id='blue-div'>
-                <h3 id='gold-title' className='iran-sans-font'>
+                <h3 id='gold-title'>
                     نگاهی به بازار فارکس <img src="/Images/currency.png" alt="" />
                 </h3>
                 <div className='most-view-gold'>
@@ -308,7 +308,7 @@ const Forex = () => {
                                     <b style={{ direction: 'ltr', textAlign: 'right' }}>
                                         {formatRate(pair.rate, pair.quote)}
                                     </b>
-                                    <span className="ltr change_percent iran-sans-font">
+                                    <span className="ltr change_percent">
                                         {parseFloat(pair.change_percent_24h) > 0 ? (
                                             <span style={{ color: "green" }}>
                                                 <i className="fa-solid fa-triangle"></i> +{parseFloat(pair.change_percent_24h).toFixed(2).toLocaleString("fa")}%
