@@ -231,70 +231,67 @@ const page = () => {
             </section>
             <section className='gold-container'>
                 {/* <div className='table-container'> */}
+                <div className="table-container">
 
-                <table id='ons-table' className=' crypto-table seke-table' >
-                    <thead>
-                        <tr>
-                            <th >آیکون</th>
-                            <th >کوین ها</th>
-                            <th>قیمت</th>
-                            <th >1 ساعت</th>
-                            <th >24 ساعت</th>
-                            <th >7 روز </th>
-                            <th >30 روز</th>
-                            <th >دو ماه</th>
-                            <th >سه ماه</th>
-                            <th >حجم 24 ساعته</th>
-                            <th >مارکت کپ</th>
-                            <th >نمودار تغییرات</th>
+                    <table id='ons-table' className=' crypto-table seke-table' >
+                        <thead>
+                            <tr>
+                                <th >آیکون</th>
+                                <th >نماد</th>
+                                <th>قیمت</th>
+                                <th >1 ساعت</th>
+                                <th >24 ساعت</th>
+                                <th >7 روز </th>
+                                <th >30 روز</th>
+                                <th >دو ماه</th>
+                                <th >سه ماه</th>
+                                <th >حجم 24 ساعته</th>
+                                <th >مارکت کپ</th>
+                                <th >نمودار تغییرات</th>
 
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {isLoading ? arzha.map((x, index) => {
-                            return (
-                                <tr key={index}>
-                                    <td><Skeleton width={20} height={20} /></td>
-                                    <td><Skeleton width={80} height={20} /></td>
-                                    <td><Skeleton width={20} height={20} /></td>
-                                    <td><Skeleton width={20} height={20} /></td>
-                                    <td><Skeleton width={20} height={20} /></td>
-                                    <td><Skeleton width={20} height={20} /></td>
-                                    <td><Skeleton width={20} height={20} /></td>
-                                    <td><Skeleton width={20} height={20} /></td>
-                                    <td><Skeleton width={20} height={20} /></td>
-                                    <td><Skeleton width={50} height={20} /></td>
-                                    <td><Skeleton width={80} height={20} /></td>
-                                </tr>
-                            )
-                        }) : coins.map((c, index) => {
-                            const coinGeckoId = symbolToCoinGeckoId[c.symbol] || c.symbol.toLowerCase();
-                            return (
-                                <tr 
-                                    key={index}
-                                    style={{ cursor: 'pointer' }}
-                                    onClick={() => router.push(`/Crypto/${coinGeckoId}`)}
-                                >
-                                    <td style={{ width: "50px" }}><img src={c.icon} /></td>
-                                    <td>{c.symbol}</td>
-                                    <td>{parseFloat(c.price).toLocaleString("fa")}$</td>
-                                    <td style={{ color: parseFloat(c.change_percent_1h) > 0 ? "green" : parseFloat(c.change_percent_1h) < 0 ? "red" : "gray", direction: "ltr" }}>{parseFloat(c.change_percent_1h).toFixed(2)}%</td>
-                                    <td style={{ color: parseFloat(c.change_percent_24h) > 0 ? "green" : parseFloat(c.change_percent_24h) < 0 ? "red" : "gray" }}>{parseFloat(c.change_percent_24h).toFixed(2)}%</td>
-                                    <td style={{ color: parseFloat(c.change_percent_7d) > 0 ? "green" : parseFloat(c.change_percent_7d) < 0 ? "red" : "gray" }}>{parseFloat(c.change_percent_7d).toFixed(2)}%</td>
-                                    <td style={{ color: parseFloat(c.change_percent_30d) > 0 ? "green" : parseFloat(c.change_percent_30d) < 0 ? "red" : "gray" }}>{parseFloat(c.change_percent_30d).toFixed(2)}%</td>
-                                    <td style={{ color: parseFloat(c.change_percent_60d) > 0 ? "green" : parseFloat(c.change_percent_60d) < 0 ? "red" : "gray" }}>{parseFloat(c.change_percent_60d).toFixed(2)}%</td>
-                                    <td style={{ color: parseFloat(c.change_percent_90d) > 0 ? "green" : parseFloat(c.change_percent_90d) < 0 ? "red" : "gray" }}>{parseFloat(c.change_percent_90d).toFixed(2)}%</td>
-                                    <td>{parseInt(c.volume_24h).toLocaleString("fa")}</td>
-                                    <td>{parseInt(c.market_cap).toLocaleString("fa")}</td>
-                                    <td><img className='chart_png' src={c.chart_24h} alt="" /></td>
-                                </tr>
-                            )
-                        })
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {isLoading ? arzha.map((x, index) => {
+                                return (
+                                    <tr key={index}>
+                                        <td><Skeleton width={20} height={20} /></td>
+                                        <td><Skeleton width={80} height={20} /></td>
+                                        <td><Skeleton width={20} height={20} /></td>
+                                        <td><Skeleton width={20} height={20} /></td>
+                                        <td><Skeleton width={20} height={20} /></td>
+                                        <td><Skeleton width={20} height={20} /></td>
+                                        <td><Skeleton width={20} height={20} /></td>
+                                        <td><Skeleton width={20} height={20} /></td>
+                                        <td><Skeleton width={20} height={20} /></td>
+                                        <td><Skeleton width={50} height={20} /></td>
+                                        <td><Skeleton width={80} height={20} /></td>
+                                    </tr>
+                                )
+                            }) : coins.map((c, index) => {
+                                return (
+                                    <tr key={index}>
+                                        <td style={{ width: "50px" }}><img className='img-coin-icon' src={c.icon} /></td>
+                                        <td>{c.symbol}</td>
+                                        <td>{parseFloat(c.price).toLocaleString("fa")}$</td>
+                                        <td style={{ color: parseFloat(c.change_percent_1h) > 0 ? "green" : parseFloat(c.change_percent_1h) < 0 ? "red" : "gray", direction: "ltr" }}>{parseFloat(c.change_percent_1h).toFixed(2)}%</td>
+                                        <td style={{ color: parseFloat(c.change_percent_24h) > 0 ? "green" : parseFloat(c.change_percent_24h) < 0 ? "red" : "gray" }}>{parseFloat(c.change_percent_24h).toFixed(2)}%</td>
+                                        <td style={{ color: parseFloat(c.change_percent_7d) > 0 ? "green" : parseFloat(c.change_percent_7d) < 0 ? "red" : "gray" }}>{parseFloat(c.change_percent_7d).toFixed(2)}%</td>
+                                        <td style={{ color: parseFloat(c.change_percent_30d) > 0 ? "green" : parseFloat(c.change_percent_30d) < 0 ? "red" : "gray" }}>{parseFloat(c.change_percent_30d).toFixed(2)}%</td>
+                                        <td style={{ color: parseFloat(c.change_percent_60d) > 0 ? "green" : parseFloat(c.change_percent_60d) < 0 ? "red" : "gray" }}>{parseFloat(c.change_percent_60d).toFixed(2)}%</td>
+                                        <td style={{ color: parseFloat(c.change_percent_90d) > 0 ? "green" : parseFloat(c.change_percent_90d) < 0 ? "red" : "gray" }}>{parseFloat(c.change_percent_90d).toFixed(2)}%</td>
+                                        <td>{parseInt(c.volume_24h).toLocaleString("fa")}</td>
+                                        <td>{parseInt(c.market_cap).toLocaleString("fa")}</td>
+                                        <td><img className='chart_png' src={c.chart_24h} alt="" /></td>
+                                    </tr>
+                                )
+                            })
 
-                        }
+                            }
 
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
 
 
             </section>

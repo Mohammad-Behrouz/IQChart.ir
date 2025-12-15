@@ -167,7 +167,7 @@ table {
 
 .crypto-table {
     box-shadow: 0 0 10px gray;
-    width: 90%;
+    width: 100%;
     border-collapse: collapse;
 
 }
@@ -226,6 +226,10 @@ table {
 
     .most-view-gold div b {
         font-size: 14px;
+    }
+
+    .seke-table{
+        width: auto;
     }
 
     .seke-table td,

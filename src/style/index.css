@@ -195,17 +195,17 @@ ul {
 
 .crypto-table th,
 .crypto-table td {
-  padding: 14px;
+  padding: 20px;
   text-align: right;
   border-bottom: 1px solid #eee;
-  font-size: 15px;
+  font-size: 11px;
   font-family: "IranYekan" !important;
   direction: ltr;
 
 }
 
 .crypto-table img {
-  width: 32px;
+  width: 23px;
 }
 
 .gold-icon {
@@ -422,7 +422,7 @@ h2 {
 
 h4 {
   font-weight: bold !important;
-  font-size: 18px !important;
+  /* font-size: 18px !important; */
 }
 
 h5 {
